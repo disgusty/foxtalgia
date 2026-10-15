@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fox head of LogoDrawable inside the 66 dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="1.9"
+        android:scaleY="1.9"
+        android:translateX="31.2"
+        android:translateY="31.2">
+        <path
+            android:fillColor="#FF21005D"
+            android:fillType="evenOdd"
+            android:pathData="M3 3L8.5 8Q12 7 15.5 8L21 3L20 10.5L22.5 13L16.5 15L12 21L7.5 15L1.5 13L4 10.5ZM7.2 11.8L9.6 11L9.8 12.4L8 12.8ZM16.8 11.8L14.4 11L14.2 12.4L16 12.8ZM11 18.9H13L12 20.3ZM5.2 5.6L8 8.6L6.2 9.6ZM18.8 5.6L16 8.6L17.8 9.6Z" />
+    </group>
+</vector>

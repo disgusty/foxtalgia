@@ -1,0 +1,4 @@
+-keep class com.disgusty.foxtalgia.** { *; }
+-keep class org.mozilla.** { *; }
+-dontwarn android.**
+-dontwarn org.mozilla.**

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="internalOnly">
+
+    <!-- Stock GeckoView (engine "stock") declares minSdk 26; the legacy engine supports 17. -->
+    <uses-sdk tools:overrideLibrary="org.mozilla.geckoview,androidx.core,androidx.core.ktx,androidx.lifecycle,androidx.lifecycle.process,androidx.lifecycle.runtime,androidx.startup,androidx.media3.common,androidx.media3.exoplayer,androidx.media3.exoplayer.hls,androidx.media3.datasource,androidx.media3.decoder,androidx.media3.container,androidx.media3.extractor,com.google.android.gms.fido,com.google.android.gms.base,com.google.android.gms.tasks,com.google.android.gms.common,com.google.android.gms.basement,androidx.collection,androidx.annotation.experimental,androidx.profileinstaller,androidx.tracing,androidx.concurrent.futures,androidx.interpolator,androidx.fragment,androidx.activity,androidx.loader,androidx.savedstate,androidx.viewpager,androidx.versionedparcelable,androidx.arch.core,androidx.lifecycle.livedata.core,androidx.lifecycle.viewmodel,androidx.lifecycle.livedata,androidx.lifecycle.viewmodel.savedstate,androidx.customview,androidx.core.viewtree,androidx.lifecycle.runtime.ktx,androidx.lifecycle.viewmodel.ktx,androidx.emoji2,androidx.window.extensions.core,androidx.collection.ktx" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Foxtalgia"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/FoxDark"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+
+        <activity
+            android:name=".ui.BrowserActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout|uiMode|density|locale|layoutDirection|navigation"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="image/svg+xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- One launcher entry per interface style; values*/launcher.xml enables the automatic one, ui/Launcher.java switches. -->
+        <activity-alias
+            android:name=".LauncherClassic"
+            android:enabled="@bool/launcher_classic"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_classic"
+            android:targetActivity=".ui.BrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".LauncherHolo"
+            android:enabled="@bool/launcher_holo"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_holo"
+            android:targetActivity=".ui.BrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".LauncherMd1"
+            android:enabled="@bool/launcher_md1"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_md1"
+            android:targetActivity=".ui.BrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".LauncherMd3"
+            android:enabled="@bool/launcher_md3"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_md3"
+            android:targetActivity=".ui.BrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout" />
+        <activity
+            android:name=".ui.AppearanceActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout" />
+        <activity
+            android:name=".ui.BookmarksActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout" />
+        <activity
+            android:name=".ui.HistoryActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout" />
+        <activity
+            android:name=".ui.DownloadsActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout" />
+        <activity
+            android:name=".ui.AddonsActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout" />
+
+        <provider
+            android:name=".files.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+    </application>
+</manifest>

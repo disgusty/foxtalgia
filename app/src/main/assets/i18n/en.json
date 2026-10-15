@@ -1,0 +1,162 @@
+{
+  "general": {"more": "More", "ok": "OK", "cancel": "Cancel", "close": "Close", "save": "Save"},
+  "browser": {
+    "addressHint": "Search or enter address",
+    "tabs": "Tabs", "menu": "Menu", "back": "Back", "forward": "Forward", "reload": "Reload",
+    "newTab": "New tab", "newPrivateTab": "New private tab", "closeTab": "Close tab", "closeAllTabs": "Close all tabs",
+    "normalTabs": "Tabs", "privateTabs": "Private", "noTabs": "No open tabs", "noPrivateTabs": "No private tabs",
+    "homeTab": "Start page",
+    "addBookmark": "Add bookmark", "editBookmark": "Edit bookmark",
+    "findInPage": "Find in page", "findHint": "Find in page", "findNext": "Next", "findPrevious": "Previous",
+    "desktopSite": "Desktop site", "share": "Share", "quit": "Quit",
+    "openInNewTab": "Open in new tab", "openInPrivateTab": "Open in private tab", "openedInBackground": "Opened in a background tab",
+    "copyLink": "Copy link", "shareLink": "Share link", "downloadLink": "Download link",
+    "openImage": "Open image", "openMedia": "Open media", "saveImage": "Save image", "saveMedia": "Save media",
+    "copyImageAddress": "Copy address", "copied": "Copied",
+    "searchWith": "Search with {engine}"
+  },
+  "home": {
+    "topSites": "Top sites", "bookmarks": "Recent bookmarks", "empty": "Sites you visit often will appear here.",
+    "removeTopSite": "Remove", "private": "Private browsing",
+    "privateInfo": "Foxtalgia forgets history, cookies and form data of private tabs when you close them. Downloads and bookmarks are kept."
+  },
+  "bookmarks": {
+    "title": "Bookmarks", "empty": "No bookmarks yet", "newFolder": "New folder", "folderName": "Folder name",
+    "edit": "Edit", "delete": "Delete", "moveTo": "Move to", "name": "Name", "address": "Address", "added": "Bookmark added"
+  },
+  "history": {
+    "title": "History", "search": "Search history", "empty": "No history", "clear": "Clear history", "delete": "Delete",
+    "today": "Today", "yesterday": "Yesterday", "lastHour": "Last hour", "everything": "Everything"
+  },
+  "downloads": {
+    "title": "Downloads", "empty": "No downloads", "confirmTitle": "Download file?", "fileName": "File name", "download": "Download",
+    "started": "Download started", "done": "Download complete", "failed": "Download failed", "canceled": "Canceled",
+    "cancel": "Cancel download", "remove": "Remove from list", "needPermission": "Allow storage access and try again"
+  },
+  "addons": {
+    "title": "Add-ons", "installedSection": "Installed", "none": "No add-ons installed",
+    "findMore": "Find add-ons", "findAndroid": "Add-ons for Android", "installFromFile": "Install from file",
+    "checkUpdates": "Check for updates", "checkingUpdates": "Checking for updates…",
+    "hint": "All add-ons of addons.mozilla.org can be installed, like in desktop Firefox. uBlock Origin is preinstalled.",
+    "addTitle": "Add {name}?", "add": "Add", "needs": "It requires your permission to:", "noPermissions": "It does not require any permissions.",
+    "allowPrivate": "Allow in private tabs", "optionalTitle": "{name} requests additional permissions",
+    "updateTitle": "{name} has been updated", "updateNeeds": "The new version needs:", "update": "Update",
+    "installed": "{name} was added", "remove": "Remove", "removeTitle": "Remove add-on?", "removeMessage": "{name} will be removed.",
+    "settings": "Settings", "runInPrivate": "Run in private tabs", "version": "Version", "author": "Author", "updated": "Updated",
+    "permissions": "Permissions",
+    "perm": {
+      "allUrls": "Access your data for all websites", "site": "Access your data for {site}",
+      "bookmarks": "Read and modify bookmarks", "browserSettings": "Read and modify browser settings",
+      "browsingData": "Clear recent browsing history, cookies, and related data", "clipboardRead": "Get data from the clipboard",
+      "clipboardWrite": "Input data to the clipboard", "downloads": "Download files and read and modify the browser's download history",
+      "geolocation": "Access your location", "history": "Access browsing history", "management": "Monitor extension usage and manage themes",
+      "nativeMessaging": "Exchange messages with programs other than Firefox", "notifications": "Display notifications to you",
+      "privacy": "Read and modify privacy settings", "proxy": "Control browser proxy settings", "sessions": "Access recently closed tabs",
+      "tabs": "Access browser tabs", "topSites": "Access browsing history", "webNavigation": "Access browser activity during navigation",
+      "declarativeNetRequest": "Block content on any page", "declarativeNetRequestFeedback": "Read your browsing history",
+      "dns": "Access IP address and hostname information", "pkcs11": "Provide cryptographic authentication services",
+      "tabHide": "Hide and show browser tabs", "find": "Read the text of all open tabs"
+    },
+    "error": {
+      "title": "Could not add the add-on", "generic": "{name} could not be installed (error {code}).",
+      "unsigned": "{name} is not signed by Mozilla. Enable unsigned add-ons in Advanced settings to install it.",
+      "incompatible": "{name} is not compatible with this version of Foxtalgia.",
+      "network": "The download failed because of a connection problem.", "corrupt": "The add-on file is damaged.",
+      "blocked": "{name} is blocked by Mozilla because it is known to cause problems."
+    }
+  },
+  "prompts": {"chooseLogin": "Choose a login", "noUsername": "(no user name)", 
+    "username": "User name", "password": "Password", "authTitle": "Sign in", "signIn": "Sign in",
+    "allow": "Allow", "block": "Block", "chooseFile": "Choose a file", "color": "Choose a color",
+    "popupTitle": "Pop-up blocked", "popupMessage": "This site wants to open a pop-up window:\n{url}",
+    "leaveTitle": "Leave this page?", "leaveMessage": "This page is asking you to confirm that you want to leave. Information you've entered may not be saved.",
+    "stay": "Stay", "leave": "Leave", "repostTitle": "Resend data?",
+    "repostMessage": "This page has to send data again. Repeating actions like a purchase may happen twice.", "resend": "Resend",
+    "saveLoginTitle": "Save login?", "saveLoginMessage": "Save the login for {site}?", "save": "Save", "notNow": "Not now"
+  },
+  "permissions": {
+    "title": "Permission", "location": "Allow {site} to use your location?", "notifications": "Allow {site} to send notifications?",
+    "storage": "Allow {site} to store data permanently?", "xr": "Allow {site} to use virtual reality devices?",
+    "drm": "Allow {site} to play DRM-controlled content?", "storageAccess": "Allow {site} to use its cookies on this site?",
+    "localNetwork": "Allow {site} to access devices on your local network?", "camera": "Allow {site} to use your camera?",
+    "mic": "Allow {site} to use your microphone?", "cameraMic": "Allow {site} to use your camera and microphone?"
+  },
+  "site": {
+    "secure": "Connection is secure.", "partlySecure": "Parts of this page are not secure.",
+    "notSecure": "Connection is not secure. Information you send could be seen by others.", "internal": "This is a page of Foxtalgia.",
+    "blocked": {"zero": "No trackers were blocked on this page.", "one": "1 tracker was blocked on this page.", "other": "{n} trackers were blocked on this page."},
+    "clearData": "Clear cookies and site data", "cleared": "Site data cleared"
+  },
+  "errors": {
+    "noApp": "No app can open this", "retry": "Try again",
+    "generic": {"title": "Unable to load the page", "text": "Foxtalgia could not load this page."},
+    "unknownHost": {"title": "Server not found", "text": "Foxtalgia can't find the server at {host}. Check the address and your connection."},
+    "refused": {"title": "Unable to connect", "text": "{host} refused the connection."},
+    "timeout": {"title": "The connection has timed out", "text": "{host} is taking too long to respond."},
+    "offline": {"title": "You are offline", "text": "Connect to the Internet and try again."},
+    "badCert": {"title": "Warning: potential security risk", "text": "The certificate of {host} is not trusted. Someone may be trying to impersonate the site."},
+    "ssl": {"title": "Secure connection failed", "text": "An error occurred during a secure connection to {host}."},
+    "httpsOnly": {"title": "Secure site not available", "text": "{host} does not support HTTPS. HTTPS-Only mode is on."},
+    "unsafe": {"title": "Deceptive or harmful site", "text": "{host} has been reported as unsafe."},
+    "badAddress": {"title": "The address isn't valid", "text": "Check the address for mistakes."},
+    "redirectLoop": {"title": "The page isn't redirecting properly", "text": "{host} is redirecting in a way that will never complete."},
+    "crashed": {"title": "The page crashed", "text": "Reload the page to try again."},
+    "portBlocked": {"title": "This address is restricted", "text": "The port used by this address is blocked for your security."}
+  },
+  "settings": {
+    "title": "Settings", "general": "General", "generalSummary": "Search engine, start page, tabs, language",
+    "appearance": "Appearance", "appearanceSummary": "Theme, interface style, accent color",
+    "privacy": "Privacy and security", "privacySummary": "Tracking protection, HTTPS-Only, history, clearing data",
+    "sites": "Site settings", "sitesSummary": "JavaScript, pop-ups, autoplay, text size",
+    "addonsSummary": "uBlock Origin and other extensions", "advanced": "Advanced", "advancedSummary": "Remote debugging, about:config",
+    "about": "About Foxtalgia",
+    "search": "Search", "searchEngine": "Search engine", "customEngine": "Custom", "customEngineHint": "URL with %s for the search terms",
+    "customEngineInvalid": "The address must contain %s", "suggestions": "Search suggestions", "suggestionsSummary": "Ask the search engine while you type (not in private tabs)",
+    "tabs": "Tabs", "homepage": "Start page", "homeNative": "Foxtalgia start page", "homeBlank": "Blank page", "homeUrl": "Custom address",
+    "restoreTabs": "Restore tabs on start", "linksBackground": "Open links in background", "linksBackgroundSummary": "\"Open in new tab\" stays on the current page",
+    "desktopDefault": "Desktop sites by default", "languageSection": "Language", "language": "Language", "systemLanguage": "System language",
+    "trackingSection": "Enhanced tracking protection", "tracking": "Tracking protection",
+    "trackingStandard": "Standard", "trackingStrict": "Strict", "trackingOff": "Off",
+    "httpsOnly": "HTTPS-Only mode", "httpsOff": "Off", "httpsPrivate": "In private tabs only", "httpsAlways": "In all tabs",
+    "doh": "DNS over HTTPS", "dohOff": "Off (system DNS)", "dohIncreased": "Increased protection: system DNS if DoH fails",
+    "dohMax": "Max protection: DoH only", "dohProvider": "DNS provider", "dohCustom": "Custom server",
+    "dohCustomHint": "DoH address, e.g. https://dns.example/dns-query", "dohCustomInvalid": "The address must start with https://",
+    "gpc": "Tell websites not to sell or share my data", "gpcSummary": "Global Privacy Control",
+    "historySection": "History and data", "rememberHistory": "Remember browsing history", "logins": "Save and fill logins",
+    "loginsSummary": "Offer to save passwords in forms", "clearOnExit": "Clear data on quit", "clearOnExitSummary": "History, cookies and cache are deleted when you use Quit",
+    "clearData": "Clear browsing data", "clearDataSummary": "History, cookies, cache, site permissions",
+    "clearHistory": "Browsing history", "clearCookies": "Cookies and site data", "clearCache": "Cached images and files",
+    "clearPermissions": "Site permissions", "clearDownloads": "Downloads list", "clear": "Clear", "cleared": "Data cleared",
+    "javascript": "JavaScript", "blockPopups": "Block pop-up windows", "autoplay": "Allow audio and video autoplay", "autoplaySummary": "Muted videos always play",
+    "textSize": "Text size", "forceZoom": "Always allow zooming", "forceZoomSummary": "Zoom on sites that prevent it",
+    "remoteDebugging": "Remote debugging via USB", "remoteDebuggingSummary": "Inspect pages from desktop Firefox (about:debugging)",
+    "aboutConfig": "Allow about:config", "aboutConfigSummary": "Expert settings of the Gecko engine",
+    "unsigned": "Allow unsigned add-ons", "unsignedSummary": "For add-on developers. Only works with the Foxtalgia engine build.",
+    "liteMode": "Lite mode", "liteModeSummary": "All tabs share one process, no preloading, no AV1 video. On by default on old and low-end devices",
+    "restartToApply": "Fully applies after the browser restarts"
+  },
+  "appearance": {
+    "theme": "Theme", "themeSystem": "Follow device theme", "themeLight": "Light", "themeDark": "Dark",
+    "oled": "Pure black", "oledSummary": "Black backgrounds in the dark theme",
+    "style": "Interface style",
+    "styleAuto": "Automatic", "styleAutoSummary": "The style of this Android version: {style}",
+    "styleClassic": "Classic", "eraClassic": "Android 1.0 – 2.3",
+    "styleHolo": "Holo", "eraHolo": "Android 3.0 – 4.4",
+    "styleMd1": "Material Design", "eraMd1": "Android 5.0 – 11",
+    "styleMd3": "Material You", "eraMd3": "Android 12 and newer",
+    "accent": "Accent color", "accentDefault": "Style default", "accentPreset": "Material palette",
+    "accentCustom": "Custom color", "accentCustomSummary": "Pick any color",
+    "defaultClassic": "Android 2.x orange", "defaultHolo": "Holo blue", "defaultMd1": "Teal",
+    "defaultMd3": "Material 3 baseline (purple)", "defaultMd3Dynamic": "Colors from your wallpaper",
+    "recentColors": "Recent colors",
+    "more": "More", "toolbar": "Address bar position", "toolbarTop": "Top", "toolbarBottom": "Bottom",
+    "webDark": "Websites follow the theme", "webDarkSummary": "Light or dark pages where sites support it",
+    "icon": "Launcher icon follows the style", "iconSummary": "The home screen icon changes with the interface style",
+    "animations": "Animations"
+  },
+  "about": {
+    "engine": "Gecko {version} on Android {android}",
+    "text": "Foxtalgia is a Firefox-based browser with interface styles of every Android era. It uses Mozilla's Gecko engine and supports Firefox add-ons.",
+    "source": "Source code", "licenses": "Licenses"
+  }
+}
